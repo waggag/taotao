@@ -4,9 +4,8 @@ import cn.waggag.common.pojo.EasyUITreeNode;
 import cn.waggag.mapper.TbItemCatMapper;
 import cn.waggag.pojo.TbItemCat;
 import cn.waggag.pojo.TbItemCatExample;
-import cn.waggag.pojo.TbItemExample;
-import cn.waggag.service.ItemCatService;
 import cn.waggag.pojo.TbItemCatExample.Criteria;
+import cn.waggag.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
