@@ -152,20 +152,16 @@ var TT = TAOTAO = {
 
     /**
      * 创建一个窗口，关闭窗口后销毁该窗口对象。<br/>
-     *
      * 默认：<br/>
      * width : 80% <br/>
      * height : 80% <br/>
      * title : (空字符串) <br/>
-     *
      * 参数：<br/>
      * width : <br/>
      * height : <br/>
      * title : <br/>
      * url : 必填参数 <br/>
      * onLoad : function 加载完窗口内容后执行<br/>
-     *
-     *
      */
     createWindow: function (params) {
         $("<div>").css({padding: "5px"}).window({

@@ -77,7 +77,9 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
         //包装数据
         return TaotaoResult.ok(contentCategory);
     }
-
+    /**
+     * 更新商品分类
+     */
     @Override
     public TaotaoResult updataContentCategory(long id, String name) {
         TbContentCategory category = contentCategoryMapper.selectByPrimaryKey(id);
@@ -86,4 +88,39 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
         return TaotaoResult.ok(category);
     }
 
+    @Override
+    public TaotaoResult deleteContentCategory(long id) {
+
+        TbContentCategory contentCategory = contentCategoryMapper.selectByPrimaryKey(id);
+        //判断删除的节点是否为父类
+        if(contentCategory.getIsParent()){
+            List<TbContentCategory> list=getContentCategoryListByParentId(id);
+            //递归删除
+            for(TbContentCategory childContentCategory : list){
+                deleteContentCategory(childContentCategory.getId());
+            }
+        }
+        //判断父类中是否还有子类节点，没有的话，把父类改成子类
+        if(getContentCategoryListByParentId(contentCategory.getParentId()).size()==1)
+        {
+            TbContentCategory parentCategory=contentCategoryMapper.selectByPrimaryKey(contentCategory.getParentId());
+            parentCategory.setIsParent(false);
+            contentCategoryMapper.updateByPrimaryKey(parentCategory);
+        }
+        contentCategoryMapper.deleteByPrimaryKey(id);
+        return  TaotaoResult.ok();
+    }
+
+    /**
+     * 获取该节点下的孩子节点
+     * @param id
+     * @return 父节点下的所有孩子节点
+     */
+    private List<TbContentCategory> getContentCategoryListByParentId(long id){
+        TbContentCategoryExample example = new TbContentCategoryExample();
+        Criteria criteria = example.createCriteria();
+        criteria.andParentIdEqualTo(id);
+        List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+        return list;
+    }
 }

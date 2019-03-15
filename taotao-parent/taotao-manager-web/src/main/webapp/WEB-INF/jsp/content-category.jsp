@@ -64,8 +64,15 @@
         } else if (item.name === "delete") {
             $.messager.confirm('确认', '确定删除名为 ' + node.text + ' 的分类吗？', function (r) {
                 if (r) {
-                    $.post("/content/category/delete/", {parentId: node.parentId, id: node.id}, function () {
-                        tree.tree("remove", node.target);
+                    $.post("/content/category/delete/", {id: node.id}, function () {
+                        tree.tree("remove",node.target)
+                        // if(data.status == 200){
+                        //     //删除前台的节点
+                        //     tree.tree("remove", node.target);
+                        //     $.messager.alert("提示", node.text+"分类删除成功");
+                        // }else{
+                        //     $.messager.alert("提示，删除"+node.text+"分类失败")；
+                        // }
                     });
                 }
             });
