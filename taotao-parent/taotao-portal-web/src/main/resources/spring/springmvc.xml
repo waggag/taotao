@@ -25,6 +25,6 @@
 	 <!--引用dubbo服务-->
 	<dubbo:application name="taotao-portal-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>
-	<!--<dubbo:reference interface="cn.waggag.service.ItemService" id="itemService" />-->
+	<dubbo:reference interface="cn.waggag.content.service.ContentService" id="contentService" />
 
 </beans>

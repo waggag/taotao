@@ -34,4 +34,8 @@ public interface ContentService {
      *  删除商品
      */
     TaotaoResult deleteContent(String ids);
+    /**
+     * 前台展示大广告
+     */
+    List<TbContent> getContentByCid(long cid);
 }
