@@ -31,7 +31,7 @@ public class GlobalExceptionResolver implements HandlerExceptionResolver {
         //展示错误页面
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("message", "你的网络有问题，请稍后重试！");
-        modelAndView.setViewName("error/execption");
+        modelAndView.setViewName("error/exception");
         return modelAndView;
     }
 

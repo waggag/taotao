@@ -26,7 +26,6 @@ public class SearchController {
 
     @RequestMapping("/search")
     public String search(@RequestParam("q") String query, @RequestParam(defaultValue = "1") Integer page, Model model) {
-
         //调服务执行查询
         try {
             //对查询条件进行转码,以UTF-8向页面显示数据
