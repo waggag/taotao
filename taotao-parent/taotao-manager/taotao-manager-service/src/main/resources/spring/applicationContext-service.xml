@@ -21,6 +21,6 @@
 	<!-- 用dubbo协议在20880端口暴露服务 -->
 	<dubbo:protocol name="dubbo" port="20880" />
 	<!-- 声明需要暴露的服务接口 -->
-	<dubbo:service interface="cn.waggag.service.ItemService" ref="itemServiceImpl" timeout="3000"/>
-	<dubbo:service interface="cn.waggag.service.ItemCatService" ref="itemCatServiceImpl" timeout="3000"/>
+	<dubbo:service interface="cn.waggag.service.ItemService" ref="itemServiceImpl" timeout="30000"/>
+	<dubbo:service interface="cn.waggag.service.ItemCatService" ref="itemCatServiceImpl" timeout="30000"/>
 </beans>

@@ -42,4 +42,5 @@
 	<dubbo:reference interface="cn.waggag.service.ItemCatService" id="itemCatService" />
 	<dubbo:reference interface="cn.waggag.content.service.ContentCategoryService" id="contentCategoryService" />
 	<dubbo:reference interface="cn.waggag.content.service.ContentService" id="contentService" />
+	<dubbo:reference interface="cn.waggag.search.service.SearchItemService" id="searchItemService" />
 </beans>
