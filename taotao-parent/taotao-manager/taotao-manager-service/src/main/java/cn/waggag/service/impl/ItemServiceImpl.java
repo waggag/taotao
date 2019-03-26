@@ -11,10 +11,13 @@ import cn.waggag.utils.IDUtils;
 import cn.waggag.utils.TaotaoResult;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sun.tools.javac.jvm.Items;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import javax.jms.*;
 import java.util.Date;
 import java.util.List;
 
@@ -32,6 +35,10 @@ public class ItemServiceImpl implements ItemService {
     private TbItemMapper itemMapper;
     @Autowired
     private TbItemDescMapper itemDescMapper;
+    @Autowired
+    private JmsTemplate jmsTemplate;
+    @Resource(name = "itemAddTopic")
+    private Destination destination;
 
     @Override
     public TbItem getItemById(long id) {
@@ -73,6 +80,14 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setUpdated(new Date());
         //向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
+        // 向Activemq发送商品添加消息
+        jmsTemplate.send(destination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId + "");
+                return textMessage;
+            }
+        });
         //返回结果
         return TaotaoResult.ok();
     }

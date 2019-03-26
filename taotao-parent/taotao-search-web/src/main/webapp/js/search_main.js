@@ -1286,10 +1286,6 @@ SEARCH.page = function(b, a) {
         b = 1
     }
     window.location = "http://localhost:8085/search.html?q="+SEARCH.query+"&page="+b;
-//    if (a) {
-//        window.scrollTo(0, $("#filter").offset().top)
-//    }
-   // searchlog(1, b, 0, 56)
 };
 SEARCH.page_jump = function(b, a) {
     var c = parseInt($("#pagin-btm .jumpto").val(), 10);
