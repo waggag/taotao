@@ -2,6 +2,7 @@ package cn.waggag.service;
 
 import cn.waggag.common.pojo.EasyUIDataGridResult;
 import cn.waggag.pojo.TbItem;
+import cn.waggag.pojo.TbItemDesc;
 import cn.waggag.utils.TaotaoResult;
 
 import java.util.List;
@@ -26,5 +27,8 @@ public interface ItemService {
      *新增商品
      */
     TaotaoResult addItem(TbItem item,String desc);
-
+    /**
+     * 根据商品Id取得商品的描述
+     */
+    TbItemDesc getItemDescById(long itemId);
 }
