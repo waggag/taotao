@@ -1714,3 +1714,303 @@ java.io.IOException: Can not lock the registry cache file C:\Users\王港\.dubbo
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-03-30 23:24:08,164 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-manager-web': initialization started
+
+
+[INFO ] 2019-03-30 23:24:08,213 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-manager-web-servlet': startup date [Sat Mar 30 23:24:08 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:24:08,257 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-03-30 23:24:08,623 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-03-30 23:24:08,860 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-03-30 23:24:08,873 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-03-30 23:24:10,413 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/category/create]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentCategoryController.addContentCategory(java.lang.Long,java.lang.String)
+
+
+[INFO ] 2019-03-30 23:24:10,415 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/category/delete/]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentCategoryController.deleteContentCategory(java.lang.Long)
+
+
+[INFO ] 2019-03-30 23:24:10,417 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/category/update]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentCategoryController.updateContentCategory(java.lang.Long,java.lang.String)
+
+
+[INFO ] 2019-03-30 23:24:10,421 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/category/list]}" onto public java.util.List<cn.waggag.common.pojo.EasyUITreeNode> cn.waggag.controller.ContentCategoryController.getContentCategoryList(java.lang.Long)
+
+
+[INFO ] 2019-03-30 23:24:10,425 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/save]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentController.addContent(cn.waggag.pojo.TbContent)
+
+
+[INFO ] 2019-03-30 23:24:10,426 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/query/list]}" onto public cn.waggag.common.pojo.EasyUIDataGridResult cn.waggag.controller.ContentController.getContentList(java.lang.Long,java.lang.Integer,java.lang.Integer)
+
+
+[INFO ] 2019-03-30 23:24:10,427 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/delete]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentController.deleteContent(java.lang.String)
+
+
+[INFO ] 2019-03-30 23:24:10,429 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/content/edit]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ContentController.updateContent(cn.waggag.pojo.TbContent)
+
+
+[INFO ] 2019-03-30 23:24:10,431 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/index/import]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.IndexManagerController.importIndex()
+
+
+[INFO ] 2019-03-30 23:24:10,433 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/cat/list]}" onto public java.util.List<cn.waggag.common.pojo.EasyUITreeNode> cn.waggag.controller.ItemCatController.getItemCatList(java.lang.Long)
+
+
+[INFO ] 2019-03-30 23:24:10,436 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public cn.waggag.pojo.TbItem cn.waggag.controller.ItemController.getItemById(java.lang.Long)
+
+
+[INFO ] 2019-03-30 23:24:10,439 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/save],methods=[POST]}" onto public cn.waggag.utils.TaotaoResult cn.waggag.controller.ItemController.addITem(cn.waggag.pojo.TbItem,java.lang.String)
+
+
+[INFO ] 2019-03-30 23:24:10,441 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/list]}" onto public cn.waggag.common.pojo.EasyUIDataGridResult cn.waggag.controller.ItemController.getItemList(java.lang.Integer,java.lang.Integer)
+
+
+[INFO ] 2019-03-30 23:24:10,444 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/{page}]}" onto public java.lang.String cn.waggag.controller.PageController.showPage(java.lang.String)
+
+
+[INFO ] 2019-03-30 23:24:10,446 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/]}" onto public java.lang.String cn.waggag.controller.PageController.showIndex()
+
+
+[INFO ] 2019-03-30 23:24:10,450 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/pic/upload]}" onto public java.lang.String cn.waggag.controller.PictureController.picUpload(org.springframework.web.multipart.MultipartFile)
+
+
+[INFO ] 2019-03-30 23:24:10,963 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-manager-web-servlet': startup date [Sat Mar 30 23:24:08 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:24:11,040 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-manager-web-servlet': startup date [Sat Mar 30 23:24:08 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:24:11,243 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王港\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.waggag.service.ItemCatService=empty://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, cn.waggag.content.service.ContentCategoryService=empty://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, cn.waggag.service.ItemService=empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158 empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158 dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, cn.waggag.content.service.ContentService=empty://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, cn.waggag.search.service.SearchService=empty://10.100.161.82:20882/cn.waggag.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=5996&side=provider&timeout=30000&timestamp=1553959428608, cn.waggag.search.service.SearchItemService=empty://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-03-30 23:24:11,284 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-03-30 23:24:11,306 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-03-30 23:24:11,308 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=waggag
+
+
+[INFO ] 2019-03-30 23:24:11,308 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-03-30 23:24:11,308 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-03-30 23:24:11,309 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\java\jdk1.8.0_191\jre
+
+
+[INFO ] 2019-03-30 23:24:11,318 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\java\java tools\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-03-30 23:24:11,320 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\11.2.0\dbhome_1\bin;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\database\WINDOWS.X64_180000_db_home\bin;D:\Program Files (x86)\NetSarang\Xshell 6\;D:\Oracle\app\waggag\product\12.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\java\jdk1.8.0_191\bin;C:\Users\王港\algs4\java\bin;D;\Program Files\PuTTY\;D:\java\java tools\apache-maven-3.6.0\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\VisualSVN Server\bin;D:\Program Files\Redis\;D:\java\databases\mysql-8.0.13-winx64\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\Program Files\IDM Computer Solutions\UltraEdit;D:\Program Files\Git\cmd;C:\Users\王港\algs4\bin;C:\Users\王港\algs4\java\bin;D:\Users\王港\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python37\;D:\Users\王港\AppData\Local\Programs\Python\Python38\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python38\;D:\Program Files\Python\Python37\Scripts\;D:\Program Files\Python\Python37\;C:\Users\王港\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;D:\Program Files\JetBrains\PyCharm 2018.3.4\bin;D:\Users\王港\AppData\Local\Programs\Microsoft VS Code\bin;.
+
+
+[INFO ] 2019-03-30 23:24:11,320 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王港\AppData\Local\Temp\
+
+
+[INFO ] 2019-03-30 23:24:11,321 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-03-30 23:24:11,321 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-03-30 23:24:11,321 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-03-30 23:24:11,321 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-03-30 23:24:11,322 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王港
+
+
+[INFO ] 2019-03-30 23:24:11,322 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王港
+
+
+[INFO ] 2019-03-30 23:24:11,323 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-manager-web
+
+
+[INFO ] 2019-03-30 23:24:11,324 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@28053aac
+
+
+[INFO ] 2019-03-30 23:24:11,375 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-03-30 23:24:11,381 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2019-03-30 23:24:11,408 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x169cf110cd70004, negotiated timeout = 30000
+
+
+[INFO ] 2019-03-30 23:24:11,411 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-03-30 23:24:11,461 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:11,510 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:11,547 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152, urls: [dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152, empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:11,818 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20881 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x3c809389, /10.100.161.82:64639 => /10.100.161.82:20881]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:11,819 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20881, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:11,963 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.content.service.ContentCategoryService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-manager-web&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1553959451152, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,013 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451985, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,159 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451985, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,292 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451985, urls: [dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451985, empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451985], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,296 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.content.service.ContentService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-manager-web&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timeout=300000&timestamp=1553959451985, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,344 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,418 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,509 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330, urls: [dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073, empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330, empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,531 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20882 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x71a5d7c3, /10.100.161.82:64640 => /10.100.161.82:20882]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,539 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20882, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,543 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.search.service.SearchItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-manager-web&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553959452330, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,603 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,643 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,673 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558, empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,676 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20880 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x621b6650, /10.100.161.82:64641 => /10.100.161.82:20880]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,677 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20880, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,678 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemCatService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-manager-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553959452558, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,695 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,710 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,752 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,753 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-manager-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553959452687, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:24:12,817 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+
+
+[INFO ] 2019-03-30 23:24:12,848 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+
+
+[INFO ] 2019-03-30 23:24:12,987 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-manager-web': initialization completed in 4795 ms

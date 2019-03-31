@@ -1,0 +1,6 @@
+cn\waggag\search\service\impl\SearchServiceImpl.class
+cn\waggag\search\service\impl\SearchItemServiceImpl.class
+cn\waggag\search\mapper\SearchItemMapper.class
+cn\waggag\search\listener\ItemAddMessageListener.class
+cn\waggag\search\dao\SearchDao.class
+cn\waggag\search\listener\MyMessageListener.class

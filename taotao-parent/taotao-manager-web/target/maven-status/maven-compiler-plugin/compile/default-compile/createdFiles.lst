@@ -1,0 +1,7 @@
+cn\waggag\controller\IndexManagerController.class
+cn\waggag\controller\ContentController.class
+cn\waggag\controller\ItemCatController.class
+cn\waggag\controller\PageController.class
+cn\waggag\controller\ContentCategoryController.class
+cn\waggag\controller\ItemController.class
+cn\waggag\controller\PictureController.class

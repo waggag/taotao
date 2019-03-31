@@ -1,0 +1,5 @@
+cn\waggag\content\service\impl\ContentCategoryServiceImpl.class
+cn\waggag\jedis\JedisClientCluster.class
+cn\waggag\content\service\impl\ContentServiceImpl.class
+cn\waggag\jedis\JedisClient.class
+cn\waggag\jedis\JedisClientPool.class

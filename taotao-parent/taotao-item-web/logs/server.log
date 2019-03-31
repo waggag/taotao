@@ -1452,3 +1452,1158 @@ No mapping found for HTTP request with URI [/item/desc/155362155266744.html] in 
 
 [WARN ] 2019-03-28 01:56:00,353 method:org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1136)
 No mapping found for HTTP request with URI [/item/desc/155362155266744.html] in DispatcherServlet with name 'taotao-item-web'
+
+
+[ERROR] 2019-03-30 00:27:33,541 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sut_index  [in template "student.ftl" at line 23, column 23]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sut_index}  [in template "student.ftl" at line 23, column 21]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:35:12,072 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> data  [in template "student.ftl" at line 39, column 18]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${data}  [in template "student.ftl" at line 39, column 16]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:36:27,169 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> data  [in template "student.ftl" at line 39, column 18]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${data?datetime}  [in template "student.ftl" at line 39, column 16]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.BuiltInsForMultipleTypes$dateBI._eval(BuiltInsForMultipleTypes.java:226)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:37:05,074 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+Can't convert the date-like value to string because it isn't known if it's a date (no time part), time or date-time value.
+The blamed expression:
+==> date  [in template "student.ftl" at line 39, column 18]
+
+----
+Tip: Use ?date, ?time, or ?datetime to tell FreeMarker the exact type.
+----
+Tip: If you need a particular format only once, use ?string(pattern), like ?string('dd.MM.yyyy HH:mm:ss'), to specify which fields to display. 
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${date}  [in template "student.ftl" at line 39, column 16]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._TemplateModelException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.MessageUtil.newCantFormatUnknownTypeDateException(MessageUtil.java:290)
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:1230)
+	at freemarker.core.Environment.formatDate(Environment.java:1181)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:347)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:40:16,858 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+Can't convert the date-like value to string because it isn't known if it's a date (no time part), time or date-time value.
+The blamed expression:
+==> date  [in template "student.ftl" at line 39, column 19]
+
+----
+Tip: Use ?date, ?time, or ?datetime to tell FreeMarker the exact type.
+----
+Tip: If you need a particular format only once, use ?string(pattern), like ?string('dd.MM.yyyy HH:mm:ss'), to specify which fields to display. 
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${date}  [in template "student.ftl" at line 39, column 17]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._TemplateModelException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.MessageUtil.newCantFormatUnknownTypeDateException(MessageUtil.java:290)
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:1230)
+	at freemarker.core.Environment.formatDate(Environment.java:1181)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:347)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:42:31,073 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> vall  [in template "student.ftl" at line 41, column 21]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${vall}  [in template "student.ftl" at line 41, column 19]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[ERROR] 2019-03-30 00:43:27,049 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> vall!默认值  [in template "student.ftl" at line 41, column 21]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${vall!默认值}  [in template "student.ftl" at line 41, column 19]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.freemarker.TestFreeMarker.testFreemarker(TestFreeMarker.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+
+[INFO ] 2019-03-30 23:23:57,243 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2019-03-30 23:23:57,280 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:23:57 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:23:57,320 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activeMq.xml]
+
+
+[INFO ] 2019-03-30 23:23:57,534 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2019-03-30 23:23:57,712 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-03-30 23:23:57,863 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-03-30 23:23:57,869 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-03-30 23:23:58,247 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王港\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.waggag.service.ItemCatService=empty://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, cn.waggag.content.service.ContentCategoryService=empty://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, cn.waggag.service.ItemService=empty://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, cn.waggag.content.service.ContentService=empty://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, cn.waggag.search.service.SearchService=empty://10.100.161.82:20882/cn.waggag.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=5996&side=provider&timeout=30000&timestamp=1553959428608, cn.waggag.search.service.SearchItemService=empty://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-03-30 23:23:58,264 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-03-30 23:23:58,276 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-03-30 23:23:58,277 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=waggag
+
+
+[INFO ] 2019-03-30 23:23:58,277 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-03-30 23:23:58,278 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-03-30 23:23:58,278 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\java\jdk1.8.0_191\jre
+
+
+[INFO ] 2019-03-30 23:23:58,279 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\java\java tools\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-03-30 23:23:58,279 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\11.2.0\dbhome_1\bin;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\database\WINDOWS.X64_180000_db_home\bin;D:\Program Files (x86)\NetSarang\Xshell 6\;D:\Oracle\app\waggag\product\12.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\java\jdk1.8.0_191\bin;C:\Users\王港\algs4\java\bin;D;\Program Files\PuTTY\;D:\java\java tools\apache-maven-3.6.0\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\VisualSVN Server\bin;D:\Program Files\Redis\;D:\java\databases\mysql-8.0.13-winx64\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\Program Files\IDM Computer Solutions\UltraEdit;D:\Program Files\Git\cmd;C:\Users\王港\algs4\bin;C:\Users\王港\algs4\java\bin;D:\Users\王港\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python37\;D:\Users\王港\AppData\Local\Programs\Python\Python38\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python38\;D:\Program Files\Python\Python37\Scripts\;D:\Program Files\Python\Python37\;C:\Users\王港\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;D:\Program Files\JetBrains\PyCharm 2018.3.4\bin;D:\Users\王港\AppData\Local\Programs\Microsoft VS Code\bin;.
+
+
+[INFO ] 2019-03-30 23:23:58,281 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王港\AppData\Local\Temp\
+
+
+[INFO ] 2019-03-30 23:23:58,282 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-03-30 23:23:58,283 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-03-30 23:23:58,283 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-03-30 23:23:58,283 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-03-30 23:23:58,284 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王港
+
+
+[INFO ] 2019-03-30 23:23:58,284 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王港
+
+
+[INFO ] 2019-03-30 23:23:58,285 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web
+
+
+[INFO ] 2019-03-30 23:23:58,286 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@71affe0e
+
+
+[INFO ] 2019-03-30 23:23:58,328 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-03-30 23:23:58,331 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2019-03-30 23:23:58,340 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x169cf110cd70003, negotiated timeout = 30000
+
+
+[INFO ] 2019-03-30 23:23:58,342 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-03-30 23:23:58,369 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,394 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,428 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959438158], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,624 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20880 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x226b7fe7, /10.100.161.82:64609 => /10.100.161.82:20880]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,625 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20880, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,683 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=8364&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553959438158, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:23:58,789 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2019-03-30 23:23:59,008 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String cn.waggag.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2019-03-30 23:23:59,010 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String cn.waggag.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2019-03-30 23:23:59,519 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:23:57 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:23:59,570 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:23:57 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:23:59,704 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2019-03-30 23:23:59,890 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:waggag-64611-1553959439774-1:1,clientId=null,started=false}
+
+
+[INFO ] 2019-03-30 23:24:00,006 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 2743 ms
+
+
+[ERROR] 2019-03-30 23:25:10,239 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> item.images  [in template "item.ftl" at line 212, column 67]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${item.images[0]}  [in template "item.ftl" at line 212, column 65]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:54)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.item.listener.ItemAddMessageListener.onMessage(ItemAddMessageListener.java:57)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:315)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:253)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1150)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1142)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1039)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-03-30 23:31:24,610 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2019-03-30 23:31:24,634 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:31:24 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:31:24,707 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activeMq.xml]
+
+
+[INFO ] 2019-03-30 23:31:25,012 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2019-03-30 23:31:25,249 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-03-30 23:31:25,467 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-03-30 23:31:25,475 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-03-30 23:31:26,033 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王港\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.waggag.service.ItemCatService=empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 dubbo://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, cn.waggag.content.service.ContentCategoryService=empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, cn.waggag.service.ItemService=empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687 empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452687 dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, cn.waggag.content.service.ContentService=empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, cn.waggag.search.service.SearchService=empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=5996&side=provider&timeout=30000&timestamp=1553959428608, cn.waggag.search.service.SearchItemService=empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-03-30 23:31:26,058 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-03-30 23:31:26,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-03-30 23:31:26,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=waggag
+
+
+[INFO ] 2019-03-30 23:31:26,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-03-30 23:31:26,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-03-30 23:31:26,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\java\jdk1.8.0_191\jre
+
+
+[INFO ] 2019-03-30 23:31:26,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\java\java tools\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-03-30 23:31:26,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\11.2.0\dbhome_1\bin;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\database\WINDOWS.X64_180000_db_home\bin;D:\Program Files (x86)\NetSarang\Xshell 6\;D:\Oracle\app\waggag\product\12.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\java\jdk1.8.0_191\bin;C:\Users\王港\algs4\java\bin;D;\Program Files\PuTTY\;D:\java\java tools\apache-maven-3.6.0\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\VisualSVN Server\bin;D:\Program Files\Redis\;D:\java\databases\mysql-8.0.13-winx64\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\Program Files\IDM Computer Solutions\UltraEdit;D:\Program Files\Git\cmd;C:\Users\王港\algs4\bin;C:\Users\王港\algs4\java\bin;D:\Users\王港\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python37\;D:\Users\王港\AppData\Local\Programs\Python\Python38\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python38\;D:\Program Files\Python\Python37\Scripts\;D:\Program Files\Python\Python37\;C:\Users\王港\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;D:\Program Files\JetBrains\PyCharm 2018.3.4\bin;D:\Users\王港\AppData\Local\Programs\Microsoft VS Code\bin;.
+
+
+[INFO ] 2019-03-30 23:31:26,076 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王港\AppData\Local\Temp\
+
+
+[INFO ] 2019-03-30 23:31:26,077 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-03-30 23:31:26,078 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-03-30 23:31:26,078 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-03-30 23:31:26,078 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-03-30 23:31:26,079 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王港
+
+
+[INFO ] 2019-03-30 23:31:26,080 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王港
+
+
+[INFO ] 2019-03-30 23:31:26,080 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web
+
+
+[INFO ] 2019-03-30 23:31:26,083 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@832b1f6
+
+
+[INFO ] 2019-03-30 23:31:26,128 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-03-30 23:31:26,132 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2019-03-30 23:31:26,144 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x169cf110cd70008, negotiated timeout = 30000
+
+
+[INFO ] 2019-03-30 23:31:26,146 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-03-30 23:31:26,175 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,205 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,271 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,533 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20880 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xf1d28a8d, /10.100.161.82:65305 => /10.100.161.82:20880]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,534 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20880, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,685 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553959885933, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:31:26,975 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2019-03-30 23:31:27,373 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String cn.waggag.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2019-03-30 23:31:27,377 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String cn.waggag.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2019-03-30 23:31:27,884 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:31:24 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:31:27,963 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:31:24 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:31:28,106 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2019-03-30 23:31:28,313 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:waggag-65311-1553959888191-1:1,clientId=null,started=false}
+
+
+[INFO ] 2019-03-30 23:31:28,491 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 3879 ms
+
+
+[ERROR] 2019-03-30 23:31:54,059 method:freemarker.log._Log4jLoggerFactory$Log4jLogger.error(_Log4jLoggerFactory.java:60)
+Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> itemParam  [in template "item.ftl" at line 303, column 19]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${itemParam}  [in template "item.ftl" at line 303, column 17]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at cn.waggag.item.listener.ItemAddMessageListener.onMessage(ItemAddMessageListener.java:57)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:746)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:684)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:651)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:315)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:253)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1150)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1142)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1039)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-03-30 23:33:22,909 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2019-03-30 23:33:22,931 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:33:22 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:33:22,977 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activeMq.xml]
+
+
+[INFO ] 2019-03-30 23:33:23,266 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2019-03-30 23:33:23,489 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-03-30 23:33:23,724 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-03-30 23:33:23,731 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-03-30 23:33:24,225 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王港\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.waggag.content.service.ContentCategoryService=empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, cn.waggag.service.ItemCatService=empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 dubbo://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, cn.waggag.service.ItemService=empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933 empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=5416&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959885933 dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, cn.waggag.content.service.ContentService=empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, cn.waggag.search.service.SearchService=empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=5996&side=provider&timeout=30000&timestamp=1553959428608, cn.waggag.search.service.SearchItemService=empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-03-30 23:33:24,253 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-03-30 23:33:24,263 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-03-30 23:33:24,264 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=waggag
+
+
+[INFO ] 2019-03-30 23:33:24,265 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-03-30 23:33:24,265 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-03-30 23:33:24,266 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\java\jdk1.8.0_191\jre
+
+
+[INFO ] 2019-03-30 23:33:24,266 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\java\java tools\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-03-30 23:33:24,266 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\11.2.0\dbhome_1\bin;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\database\WINDOWS.X64_180000_db_home\bin;D:\Program Files (x86)\NetSarang\Xshell 6\;D:\Oracle\app\waggag\product\12.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\java\jdk1.8.0_191\bin;C:\Users\王港\algs4\java\bin;D;\Program Files\PuTTY\;D:\java\java tools\apache-maven-3.6.0\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\VisualSVN Server\bin;D:\Program Files\Redis\;D:\java\databases\mysql-8.0.13-winx64\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\Program Files\IDM Computer Solutions\UltraEdit;D:\Program Files\Git\cmd;C:\Users\王港\algs4\bin;C:\Users\王港\algs4\java\bin;D:\Users\王港\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python37\;D:\Users\王港\AppData\Local\Programs\Python\Python38\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python38\;D:\Program Files\Python\Python37\Scripts\;D:\Program Files\Python\Python37\;C:\Users\王港\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;D:\Program Files\JetBrains\PyCharm 2018.3.4\bin;D:\Users\王港\AppData\Local\Programs\Microsoft VS Code\bin;.
+
+
+[INFO ] 2019-03-30 23:33:24,267 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王港\AppData\Local\Temp\
+
+
+[INFO ] 2019-03-30 23:33:24,268 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-03-30 23:33:24,269 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-03-30 23:33:24,269 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-03-30 23:33:24,269 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-03-30 23:33:24,270 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王港
+
+
+[INFO ] 2019-03-30 23:33:24,270 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王港
+
+
+[INFO ] 2019-03-30 23:33:24,270 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web
+
+
+[INFO ] 2019-03-30 23:33:24,271 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6c34ffb7
+
+
+[INFO ] 2019-03-30 23:33:24,318 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-03-30 23:33:24,344 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2019-03-30 23:33:24,374 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x169cf110cd70009, negotiated timeout = 30000
+
+
+[INFO ] 2019-03-30 23:33:24,376 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-03-30 23:33:24,406 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,432 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,484 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,740 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20880 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x2d445e4b, /10.100.161.82:65461 => /10.100.161.82:20880]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,740 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20880, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,813 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553960004118, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:33:24,932 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2019-03-30 23:33:25,218 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String cn.waggag.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2019-03-30 23:33:25,221 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String cn.waggag.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2019-03-30 23:33:25,621 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:33:22 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:33:25,704 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:33:22 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:33:25,846 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2019-03-30 23:33:26,034 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:waggag-65463-1553960005920-1:1,clientId=null,started=false}
+
+
+[INFO ] 2019-03-30 23:33:26,318 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 3406 ms
+
+
+[INFO ] 2019-03-30 23:34:29,989 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-item-web': initialization started
+
+
+[INFO ] 2019-03-30 23:34:30,021 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:34:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:34:30,080 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc-activeMq.xml]
+
+
+[INFO ] 2019-03-30 23:34:30,213 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web\target\classes\spring\springmvc.xml]
+
+
+[INFO ] 2019-03-30 23:34:30,398 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-03-30 23:34:30,557 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-03-30 23:34:30,563 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-03-30 23:34:31,125 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王港\.dubbo\dubbo-registry-192.168.25.128.cache, data: {cn.waggag.content.service.ContentCategoryService=empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 empty://10.100.161.82/cn.waggag.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959451152 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentCategoryService&methods=addContentCategory,deleteContentCategory,updataContentCategory,getContentCategoryList&pid=16292&side=provider&timeout=300000&timestamp=1553959414142, cn.waggag.service.ItemCatService=empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 empty://10.100.161.82/cn.waggag.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452558 dubbo://10.100.161.82:20880/cn.waggag.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemCatService&methods=getItemCatList&pid=9388&side=provider&timeout=30000&timestamp=1553959423115, cn.waggag.service.ItemService=empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118 empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=13136&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960004118 dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, cn.waggag.content.service.ContentService=empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 empty://10.100.161.82/cn.waggag.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,addContent,deleteContent,updateContent&pid=3960&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959457893 dubbo://10.100.161.82:20881/cn.waggag.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=cn.waggag.content.service.ContentService&methods=getContentList,getContentByCid,deleteContent,updateContent,addContent&pid=16292&side=provider&timeout=300000&timestamp=1553959414922, cn.waggag.search.service.SearchService=empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 empty://10.100.161.82/cn.waggag.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=16016&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959472052 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchService&methods=search&pid=5996&side=provider&timeout=30000&timestamp=1553959428608, cn.waggag.search.service.SearchItemService=empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 empty://10.100.161.82/cn.waggag.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=13572&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553959452330 dubbo://10.100.161.82:20882/cn.waggag.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=cn.waggag.search.service.SearchItemService&methods=importItemsToIndex&pid=5996&side=provider&timeout=30000&timestamp=1553959428073}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-03-30 23:34:31,144 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-03-30 23:34:31,158 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-03-30 23:34:31,159 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=waggag
+
+
+[INFO ] 2019-03-30 23:34:31,159 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_191
+
+
+[INFO ] 2019-03-30 23:34:31,159 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-03-30 23:34:31,160 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\java\jdk1.8.0_191\jre
+
+
+[INFO ] 2019-03-30 23:34:31,160 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\java\java tools\apache-maven-3.6.0\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-03-30 23:34:31,161 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\product\11.2.0\dbhome_1\bin;D:\Program Files (x86)\NetSarang\Xftp 6\;D:\database\WINDOWS.X64_180000_db_home\bin;D:\Program Files (x86)\NetSarang\Xshell 6\;D:\Oracle\app\waggag\product\12.2.0\dbhome_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\java\jdk1.8.0_191\bin;C:\Users\王港\algs4\java\bin;D;\Program Files\PuTTY\;D:\java\java tools\apache-maven-3.6.0\bin;D:\Program Files\TortoiseSVN\bin;D:\Program Files\VisualSVN Server\bin;D:\Program Files\Redis\;D:\java\databases\mysql-8.0.13-winx64\bin;C:\Program Files (x86)\Common Files\Thunder Network\KanKan\Codecs;D:\Program Files\IDM Computer Solutions\UltraEdit;D:\Program Files\Git\cmd;C:\Users\王港\algs4\bin;C:\Users\王港\algs4\java\bin;D:\Users\王港\AppData\Local\Programs\Python\Python37\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python37\;D:\Users\王港\AppData\Local\Programs\Python\Python38\Scripts\;D:\Users\王港\AppData\Local\Programs\Python\Python38\;D:\Program Files\Python\Python37\Scripts\;D:\Program Files\Python\Python37\;C:\Users\王港\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;D:\Program Files\JetBrains\PyCharm 2018.3.4\bin;D:\Users\王港\AppData\Local\Programs\Microsoft VS Code\bin;.
+
+
+[INFO ] 2019-03-30 23:34:31,161 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王港\AppData\Local\Temp\
+
+
+[INFO ] 2019-03-30 23:34:31,163 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-03-30 23:34:31,163 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-03-30 23:34:31,163 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-03-30 23:34:31,163 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-03-30 23:34:31,164 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王港
+
+
+[INFO ] 2019-03-30 23:34:31,164 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王港
+
+
+[INFO ] 2019-03-30 23:34:31,165 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\WorkSpace\IntelliJ IDEA\商城项目\taotao-parent\taotao-item-web
+
+
+[INFO ] 2019-03-30 23:34:31,166 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.128:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@71ac258f
+
+
+[INFO ] 2019-03-30 23:34:31,210 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.25.128/192.168.25.128:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-03-30 23:34:31,213 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.25.128/192.168.25.128:2181, initiating session
+
+
+[INFO ] 2019-03-30 23:34:31,223 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.25.128/192.168.25.128:2181, sessionid = 0x169cf110cd7000a, negotiated timeout = 30000
+
+
+[INFO ] 2019-03-30 23:34:31,225 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-03-30 23:34:31,246 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960071030, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,280 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960071030, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,337 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960071030, urls: [dubbo://10.100.161.82:20880/cn.waggag.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=getItemList,addItem,getItemById,getItemDescById&pid=9388&side=provider&timeout=30000&timestamp=1553959422239, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960071030, empty://10.100.161.82/cn.waggag.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timestamp=1553960071030], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,559 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /10.100.161.82:20880 from NettyClient 10.100.161.82 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x3d104a5f, /10.100.161.82:49165 => /10.100.161.82:20880]], dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,560 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient waggag/10.100.161.82 connect to the server /10.100.161.82:20880, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,622 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.waggag.service.ItemService from url zookeeper://192.168.25.128:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-item-web&check=false&dubbo=2.5.3&interface=cn.waggag.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=14432&revision=1.0-SNAPSHOT&side=consumer&timeout=30000&timestamp=1553960071030, dubbo version: 2.5.3, current host: 10.100.161.82
+
+
+[INFO ] 2019-03-30 23:34:31,745 method:org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer.postProcessTemplateLoaders(FreeMarkerConfigurer.java:127)
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+
+
+[INFO ] 2019-03-30 23:34:31,938 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/genhtml]}" onto public java.lang.String cn.waggag.item.controller.HtmlGenController.genHtml() throws java.lang.Exception
+
+
+[INFO ] 2019-03-30 23:34:31,939 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/item/{itemId}]}" onto public java.lang.String cn.waggag.item.controller.ItemController.showItem(java.lang.Long,org.springframework.ui.Model)
+
+
+[INFO ] 2019-03-30 23:34:32,267 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:34:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:34:32,327 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-item-web-servlet': startup date [Sat Mar 30 23:34:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-03-30 23:34:32,435 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2019-03-30 23:34:32,658 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:waggag-49168-1553960072508-1:1,clientId=null,started=false}
+
+
+[INFO ] 2019-03-30 23:34:33,178 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-item-web': initialization completed in 3185 ms

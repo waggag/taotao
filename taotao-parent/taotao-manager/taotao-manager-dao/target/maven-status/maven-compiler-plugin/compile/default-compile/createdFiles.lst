@@ -1,0 +1,11 @@
+cn\waggag\mapper\TbContentMapper.class
+cn\waggag\mapper\TbOrderMapper.class
+cn\waggag\mapper\TbItemMapper.class
+cn\waggag\mapper\TbContentCategoryMapper.class
+cn\waggag\mapper\TbItemParamItemMapper.class
+cn\waggag\mapper\TbItemCatMapper.class
+cn\waggag\mapper\TbOrderItemMapper.class
+cn\waggag\mapper\TbUserMapper.class
+cn\waggag\mapper\TbItemDescMapper.class
+cn\waggag\mapper\TbItemParamMapper.class
+cn\waggag\mapper\TbOrderShippingMapper.class

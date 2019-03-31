@@ -1,0 +1,4 @@
+cn\waggag\item\controller\ItemController.class
+cn\waggag\item\controller\HtmlGenController.class
+cn\waggag\item\pojo\Item.class
+cn\waggag\item\listener\ItemAddMessageListener.class
