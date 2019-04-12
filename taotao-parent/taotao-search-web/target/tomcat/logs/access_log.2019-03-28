@@ -1,9 +1,0 @@
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:00:14:20 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-1 3176
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:00:14:20 +0800] "GET /js/search_main.js HTTP/1.1" 200 119191 http-bio-8085-exec-3 33
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:00:14:20 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8085-exec-4 3
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:00:47:11 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-6 94
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:00:48:47 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-9 99
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:01:43:41 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-1 512
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:01:53:23 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-4 152
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:01:54:25 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-8 76
-0:0:0:0:0:0:0:1 - - [28/Mar/2019:01:54:28 +0800] "GET /search.html?q=waggag HTTP/1.1" 200 20146 http-bio-8085-exec-9 43
