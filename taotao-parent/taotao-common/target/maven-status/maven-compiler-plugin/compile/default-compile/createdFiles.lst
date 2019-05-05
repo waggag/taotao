@@ -1,9 +1,0 @@
-cn\waggag\common\pojo\SearchResult.class
-cn\waggag\utils\IDUtils.class
-cn\waggag\utils\FastDFSClient.class
-cn\waggag\utils\JsonUtils.class
-cn\waggag\common\pojo\SearchItem.class
-cn\waggag\common\pojo\EasyUIDataGridResult.class
-cn\waggag\common\pojo\EasyUITreeNode.class
-cn\waggag\utils\CookieUtils.class
-cn\waggag\utils\TaotaoResult.class

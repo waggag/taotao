@@ -394,7 +394,6 @@
         var itemId = "${item.id}";
         //给商品规格参数tab页绑定事件
         $("#p-con-attr").bind("click", function () {
-
             itemControl.getItemParam(itemId);
         });
         //延迟一秒加载商品描述信息
@@ -407,8 +406,7 @@
         //加入购物车之前先取商品数量
         var num = $("#buy-num").val();
         //拼装url参数，做跳转
-        location.href = "http://localhost:8088/cart/add/${item.id}.html?num=" + num;
-
+        location.href = "http://localhost:8089/cart/add/${item.id}.html?num=" + num;
     }
 
 </script>
