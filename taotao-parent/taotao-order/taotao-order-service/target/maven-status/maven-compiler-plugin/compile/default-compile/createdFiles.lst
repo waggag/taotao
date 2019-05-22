@@ -1,0 +1,4 @@
+cn\waggag\jedis\JedisClientCluster.class
+cn\waggag\jedis\JedisClient.class
+cn\waggag\jedis\JedisClientPool.class
+cn\waggag\order\service\impl\OrderServiceImpl.class

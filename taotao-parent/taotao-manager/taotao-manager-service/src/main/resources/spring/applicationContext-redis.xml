@@ -18,7 +18,7 @@
 		<constructor-arg name="port" value="6379" />
 	</bean>
 
-	<bean id="jedisClientPool" class="cn.waggag.jedis.JedisClientPool">
+	<bean id="jedisClientPool" class="cn.waggag.JedisClientPool">
 	</bean>
 
 	<!-- Redis集群 -->
